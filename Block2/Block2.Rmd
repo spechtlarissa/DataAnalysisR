@@ -1,0 +1,40 @@
+---
+title: "Block 2  - Statistics & Projektarbeit"
+author: "Larissa Specht MA"
+date: "26.11.& 27.11.2021"
+output: slidy_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Syllabus
+
+|                | 27.11.2021                                                    | 28.11.2021                                                                |
+|----------------|---------------------------------------------------------------|---------------------------------------------------------------------------|
+| 10.00 - 11.15  | Orga und Wrap Up,  Basics: Stats                              | Wrap Up,  Gruppenarbeit: Data analysis project                            |
+|                | PAUSE                                                         | PAUSE                                                                     |
+| 11.30 - 12.30  | Lineare, logistische Regressionen und Machine Learning Basics | Gruppenarbeit:Data analysis project                                       |
+|                | MITTAGSPAUSE                                                  | MITTAGSPAUSE                                                              |
+| 14.00 - 15.30  | Hands on: Lineare Regression                                  | Präsentation: Data analysis project                                       |
+|                | PAUSE                                                         | PAUSE                                                                     |
+| 15.45 - 17.00  | Ausblick: Experimentelle Daten und Analyse                    | Ausblick: Machine Learning, Natural Language Processing und  Data Science |
+## Slide with Bullets
+
+- Bullet 1
+- Bullet 2
+- Bullet 3
+
+## Slide with R Output
+
+```{r cars, echo = TRUE}
+summary(cars)
+```
+
+## Slide with Plot
+
+```{r pressure}
+plot(pressure)
+```
+

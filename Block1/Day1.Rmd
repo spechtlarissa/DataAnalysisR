@@ -1,0 +1,41 @@
+---
+title: "Tag 1 - Introduction"
+author: "Larissa Specht MA"
+date: "29.10.2021"
+output: slidy_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Syllabus
+|                | 29.10.2021                                                                                       | 30.10.2021                                           |
+|----------------|--------------------------------------------------------------------------------------------------|------------------------------------------------------|
+| 10.00 - 11.15  | Orga, Tech -<br>Basics:<br>Was ist Data Science? <br>Was und warum R und R Studio?<br>R Umgebung | Wrap up Freitag<br><br>RMarkdown                     |
+|                | PAUSE                                                                                            | PAUSE                                                |
+| 11.30 - 12.30  | Basics: Operationen, Datentypen                                                                  | Datenvisualisierung (ggplot)<br>Intro und Datentypen |
+|                | MITTAGSPAUSE                                                                                     | MITTAGSPAUSE                                         |
+| 14.00 - 15.30  | Dateninput u.-output, Data Wrangling (dplyr)                                                     | Datenvisualisierung                                  |
+|                | PAUSE                                                                                            | PAUSE                                                |
+| 15.45 - 17.00  | Gruppenarbeit: Hands-on,  Präsentation und Diskussion                                            | Gruppenarbeit: Hands-on Präsentation und Diskussion  |
+## Slide with Bullets
+
+- Bullet 1
+- Bullet 2
+- Bullet 3
+
+## Slide with R Output
+
+```{r cars, echo = TRUE}
+summary(cars)
+
+
+```
+
+## Slide with Plot
+
+```{r pressure}
+plot(pressure)
+```
+
