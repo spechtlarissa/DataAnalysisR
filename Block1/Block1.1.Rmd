@@ -1,0 +1,217 @@
+---
+title: "Datenverarbeitung mit R"
+author: "Larissa Specht MA"
+date: "29.10. und 30.10.2021"
+output:
+  ioslides_presentation: default
+  isoslides_presentation: default
+  smaller: yes
+  incremental: yes
+  beamer_presentation: default
+  slidy_presentation: default
+subtitle: Block 1.1 - Einfühung  & Datenvisualisierung
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Datenverarbeitung mit R
+
+
+- Kontakt: larissa.specht@uni-tuebingen.de
+- Sprechstunde nach Vereinbarung
+- Credits: 3 ECTS
+- Material: 
+
+
+ **Mentimeter**
+
+  https://www.menti.com/yz2pcoe2qj
+  
+  Code: 14 37 45 6
+
+## Ziel des Kurses
+
+ - Grundlegender Ueberblick in R als Datenverarbeitungs - und Statistiksoftware
+ - Einführung tidyverse Programme zur Datenverarbeitung
+ - Erstellung von RMarkdownreports
+ - Datenvisualisierung mit R
+ - Grundlegende statistische Modellierung (Machine Learning)
+ - Arbeit an eigenem Dataprojekt
+ 
+## Arbeitsweise
+ - So aktiv wie möglich
+ - Wir coden zusammen und dann wendet ihr allein oder in Gruppenarbeit an
+ - Empfehlung, legt euch ein oder mehrere R-Skripte an und kommentiert aus
+ - Jeder Themenblock endet mit kleinen Aufgaben, jeder Tag mit einer Gruppenaufgabe
+
+
+## Syllabus {.smaller}
+
+
+|                | 29.10.2021                                                                                       | 30.10.2021                                           |
+|----------------|--------------------------------------------------------------------------------------------------|------------------------------------------------------|
+| 10.00 - 11.15  | Orga, Tech -<br>Basics:<br>Was ist Datenverarbeitung? <br>Was und warum R und R Studio?<br>R Umgebung | Wrap up Freitag<br><br>RMarkdown                     |
+|                | PAUSE                                                                                            | PAUSE                                                |
+| 11.30 - 12.30  | Basics: Operationen, Datentypen                                                                  | Datenvisualisierung (ggplot)<br>Intro und Datentypen |
+|                | MITTAGSPAUSE                                                                                     | MITTAGSPAUSE                                         |
+| 13.45 - 15.30  | Dateninput u.-output, Data Wrangling (dplyr)                                                     | Datenvisualisierung                                  |
+|                | PAUSE                                                                                            | PAUSE                                                |
+| 15.45 - 17.00  | Gruppenarbeit: Hands-on,  Präsentation und Diskussion                                            | Gruppenarbeit: Hands-on Präsentation, Diskussion und Ausblick |
+
+
+## Was ist Data Analysis?
+
+
+"In der Datenanalyse wird mit statistischen Methoden gearbeitet, mit welchen aus vorliegenden numerischen Einzeldaten zusammenfassende Informationen (Kenngrößen) gewonnen und tabellarisch oder grafisch aufbereitet und dokumentiert werden.
+
+Statistische Datenanalysen sind ein fester Bestandteil in vielen Bereichen des täglichen Lebens. Das reicht von der Umfrageforschung über prospektive klinische Studien bis hin zu Analysen von latenten Zusammenhängen in sehr großen Datenbeständen (Data Mining)."
+                                      <p align="right">**(de.wikipedia.org)** </p>
+                                                     
+                                                     
+                                                     
+                                                         
+                                                        
+## R und R Studio?
+
+![](http://secemu.org/wp-content/uploads/2017/09/R_logo.png){width=10%}
+
+- entwickelt 1992 von Ross Ihaka und Robert Gentleman
+- Statistikprogramm
+- Nicht proprietäre Programmiersprache
+- objektbasiert, dynamisch, funktional
+
+
+
+
+
+![](https://logos-download.com/wp-content/uploads/2020/06/RStudio_Logo.png){width=15%}
+
+- Grapical user interface (GUI) oder Application programming interface (API) 
+ 
+ 
+## Datenanalyse mit dem tidyverse
+
+
+![](https://teachdatascience.com/post/tidyverse/tidyverse-package-workflow.png){width=80%} [^1]
+
+
+
+
+[^1]:(Quelle: https://teachdatascience.com/post/tidyverse/tidyverse-package-workflow.png)
+
+## Hands on:
+
+Macht euch mit der Benutzeroberfläche vertraut:
+
+    - legt einen neuen Order auf eurem Laptop an
+    - macht es zu einem R.project
+    - öffnet ein Skript
+    - installiert **here**
+
+
+## Aufgaben zu logischen Operatoren (1/2)
+1. Erstelle die angegebene Matrix mit dem Namen x folgenden Spezifikationen
+    2 Reihen, 5 Spalten, reihenweise befüllt mit den Zahlen 1 bis 10
+2. Führt die unten angegebenen Gleichungen nacheinander aus. Was bedeuten die Symbole?
+
+    a. x > 5
+    b. x!=3 
+    c. >= 3 | x < 2
+    d. != 3 & x < 5
+
+
+## Aufgaben zu Operationen (2/2)
+
+
+- Wie viel ist 3 hoch 6 und wie viel 51 mal 8?
+- Speichert die Ergebnisse unter den Variabeln a und b
+- Zeigt mit logischen Operatoren, welche Variable den höheren Wert hat
+- Welchen Datentyp hat a?
+
+
+
+
+## Dateninput und Datenoutput
+
+- Matrizen und Dataframes (internal) 
+- Operationen 
+- Daten einlesen und abspeichern
+
+
+## Aufgabe Dataframes
+
+- Zeige nur die Daten für Hühner an, die mehr als 30 wiegen 
+- Und jetzt für Hühner die mehr als 30 und weniger als 100 wiegen
+- Erzeuge aus den neuen Teildatensätzen neue Datensätze mit anderen  Namen
+
+## Fehlermeldungen
+
+Was lief hier falsch? Probiert es aus
+
+chick <-ChickWeight
+
+testdiet <- chick[chick$Diet==4]
+
+testdiet2 <- subset(chick$Diet==4)
+
+
+## Dplyr {.smaller}
+
+- Gehört zum tidyverse 
+- Aufgebaut um verben
+
+         - select()   
+         
+         - filter()
+         
+         - mutate()
+         
+         - arrange()
+         
+         - group_by()
+         
+         - summarize()
+         
+         - rename()
+         
+- Pipe Operator %>%  (Strg+M)
+
+ 
+ 
+## Aufgaben zu select, filter und mutate {.smaller}
+
+1. Erstelle einen neuen Dataframe **sepal_measures**, bestehend aus Sepal.Length und Sepal.Width
+
+2. Erstelle einen weiteren Dataframe **sepal_measures_setosa**, auf  nur mit den Maßen aus 1. für *setosa*
+
+3. Auf Basis des Dataframes **iris** erstelle einen dataframe mit allen Spalten außer **Species** und gib dem Dataframe einen Namen
+
+4. Erstelle einen Dataframe ausschließlich für *versicolor* mit einer Sepal.Length über 5
+
+5. Erstelle einen Dataframe mit einer Petal.Length über 5 und einer Petal.Width über 1.8
+
+6. Wie viele Einträge haben die Datensätze aus 4. und 5. jeweils (Tipp: nrow() )
+
+7. Erstelle jeweils eine Spalte für die Differenz zwischen Sepal.Length und Petal.Length und das gleiche für die Differenz zwischen der beiden Angaben für Width
+
+8. Optional: Erstelle eine Spalte **is_wide** darin soll 1 stehen wenn Sepal.Length oder Petal.Length größer als 5 sind und 0, wenn das nicht der Fall ist. (Tipp: ifelse() )
+
+
+## Aufgaben zu arrange, group_by, summarize und rename
+
+
+1. Finde heraus, wie man in absteigender Reihenfolge sortiert
+
+2. Erstetze *mutate* durch *summarize*. Was ist der Unterschied?
+
+3. Benenne die übrigen Spalten im "deutschen" Dataframe in deutsche Namen um.
+
+
+
+## Das wars für heute
+
+
+![](https://memegenerator.net/img/instances/65496756/ill-see-you-tomorrow.jpg){width=60%}
+

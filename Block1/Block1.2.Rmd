@@ -1,0 +1,169 @@
+---
+title: "Datenverarbeitung mit R"
+author: "Larissa Specht MA"
+date: "29.10. und 30.10.2021"
+output:
+  ioslides_presentation: default
+  isoslides_presentation: default
+  smaller: yes
+  incremental: yes
+  beamer_presentation: default
+  slidy_presentation: default
+subtitle: Block 1.2 - Introduction  & Data Visualization
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Was bisher geschah...    {.smaller}
+ - [x] Grundlegende Funktionen von R
+ 
+ - [x] Erste Datenoperationen
+ 
+ - [x] Einlesen und Abspeichern von Files
+ 
+ - [x] Datenauswertung mit dplyr
+
+              select(): Spalten auswählen
+              
+              filter(): Zeilen mit bestimmten Werte auswählen
+              
+              mutate(): Operationen an Daten ausführen
+              
+              arrange(): Ordnen
+              
+              group_by(): Unsichtbare Gruppierung zur Weiterverarbeitung
+              
+              rename():  Umbenennen
+
+## und heute: {.smaller}
+
+|                | 29.10.2021                                                                                       | 30.10.2021                                           |
+|----------------|--------------------------------------------------------------------------------------------------|------------------------------------------------------|
+| 10.00 - 11.15  | Orga, Tech -<br>Basics:<br>Was ist Datenverarbeitung? <br>Was und warum R und R Studio?<br>R Umgebung | Wrap up Freitag<br><br> Übungen                    |
+|                | PAUSE                                                                                            | PAUSE                                                |
+| 11.30 - 12.30  | Basics: Operationen, Datentypen                                                                  | Datenvisualisierung (ggplot)<br><br> |
+|                | MITTAGSPAUSE                                                                                     | MITTAGSPAUSE                                         |
+| 13.45 - 15.30  | Dateninput u.-output, Data Wrangling (dplyr)                                                     | Datenvisualisierung                                  |
+|                | PAUSE                                                                                            | PAUSE                                                |
+| 15.45 - 17.00  | Gruppenarbeit: Hands-on,  Präsentation und Diskussion                                            | Gruppenarbeit: Hands-on Präsentation, Diskussion und Ausblick |
+
+<!-- ## RMarkdown: Überblick -->
+
+
+<!-- - WYISWYG vs. WYSIWM Texteditoren -->
+<!-- - Markdown ist eine markup Sprache, wie html oder xml -->
+<!-- - Die Syntax ist deutlich einfacher zu erlernen bei html und xml -->
+<!-- - RMarkdown erlaubt die Integration von Codeelementen ohne Copy paste von Tabellen  -->
+
+
+<!-- ## LaTex Beispiel -->
+
+
+<!-- ![](https://www.kv.by/sites/default/files/user7743/8_6.png) -->
+
+
+<!-- ## R Markdown{.incremental} -->
+
+<!-- Was glaubt ihr, wie kommt die Datenanalyse normalerweise in einen Text? -->
+
+
+<!-- >- R Markdown Besteht aus 3 Kernelementen:  -->
+
+<!--   >- YAML (Um Outputparameter zu spezifizieren) -->
+
+<!--   >- markdown (Für das typesetting) -->
+
+<!--   >- knitr (Um Code elemente darzustellen) -->
+
+
+<!-- ## Let's get started... -->
+
+<!-- 1. Öffne ein neues R Markdown Dokument -->
+
+<!-- 2. Gib die entsprechenden Angaben an -->
+
+<!-- 3. Speichere als .Rmd Datei -->
+
+
+<!-- ## Aufgabe RMarkdown -->
+
+<!-- 1. Nutzt die erstellte Datei als Vorlage.  -->
+<!-- 2. Erstellt einen Report über die Top10 Netflixfilme. -->
+<!-- 3. Nutzt dafür folgenden Text Spezifizierunge und übernehmt  auch die Formatierung -->
+<!--       Titel: Die erfolgreichsten Netflixfilme -->
+
+<!--     Subüberschrift:  "Die Top 10 auf **Netflix**" -->
+
+<!--     Text:" Hier werden die zehn erfolgreichsten auf der Plattform  **Netflix** seit       2015 dargestellt. Dabei wurden Filme aus allen *Sprachen* und *Genres*                berücksichtigt. Zugrunde liegt der *IMdB Score*."   -->
+
+<!-- 4. Integriert die Tabelle der 10 erfolgreichsten Filme mit den Spalten Titel, Sprache und Imdb.Score -->
+
+<!-- 5. Generiert daraus ein word und ein pdf Dokument -->
+
+
+## Datenvisualisierung mit ggplot 
+- Teil des tidyverse von Hadley Wickham
+
+- am weitesten verbreitete R Visualisierungspaket
+
+- Code folgt einer Grammatik
+
+![](http://www.science-craft.com/wp-content/uploads/2014/06/ggplot-3.png)
+
+
+## Häufige Diagrammtypen
+
+- Histogramme
+
+- Balkendiagramme
+
+- Scatterplots
+
+- Liniendiagramme
+ 
+## Diagramme für distinkte Variablen und Häufigkeiten
+
+### Histogramme
+- Plottet Häufigkeiten
+
+- Sinnvoll, wenn nur eine Variable vorhanden ist
+
+
+### Balkendiagramme
+
+- Plottet Häufigkeiten
+
+- Für mehrere Variablen
+
+## Aufgaben zu Histogrammen und Barplots
+
+1. Schaut euch noch einmal den Code für die Histogramme mit den Küken an (pl2 und pl4):
+Kombiniert die Codezeilen zu jeweils einem einzigem Chunk (für pl2 und für pl5), so dass die Zwischenspeicherschritte (p + *code*) entfallen. Außerdem soll der Code nicht mehr unter einer Variable abgespeichert werden.
+
+2. Ändert bei dem blauen Kuekendiagramm die Achsenbeschriftungen und den Titel
+
+
+
+
+## Diagramme für numerische Variablen und lineare Zusammenhänge
+
+
+## Aufgaben
+
+1. Ihr wisst jetzt, was Facetgrids sind. Geht nochmal zurück zu den Facets zu den Titanicdaten. Zeigt mit einem Barplot welche Menschengruppe die meisten Opfer zu beklagen hatte.
+
+2. Schaut euch die Baumdaten. Wie geht ihr vor, wenn ihr nur an den Daten von Baum 1 und 2 interessiert seid? Plottet eine Version 
+
+3. Spielt mit theme_  herum und schaut, welche Optionen es noch gibt.
+
+
+
+## Bis zum nächsten Mal
+
+Bitte lesen:
+Bodo Winter Tutorials (auf moodle in Block 2/ Literatur2)
+beide Texte lesen und nachvollziehen (Ausführen nicht nötig)
+ 
