@@ -1,0 +1,14 @@
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+.httr-oauth
+*.pdf
+*.jpeg
+*.png
+
+*.html
+*.doc
+
+/Literatur
+*pdf

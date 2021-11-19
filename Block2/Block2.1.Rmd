@@ -1,0 +1,102 @@
+---
+title: "Datenverarbeitung mit R"
+author: "Larissa Specht MA"
+date: "25.11. und 26.11.2021"
+output:
+  ioslides_presentation: default
+  isoslides_presentation: default
+  smaller: yes
+  incremental: yes
+  beamer_presentation: default
+  slidy_presentation: default
+subtitle: Block 2.1 - Linear Regression and R Markdown
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE) 
+
+library(here)
+```
+
+## Plan für dieses Wochenende  {.smaller}
+
+
+|                | 25.11.2021                                                                                | 26.11.2021                                          |
+|----------------|-------------------------------------------------------------------------------------------|-----------------------------------------------------|
+| 10.00 - 11.15  | Orga, Wiederholung, Überblick<br><br>Linear Regressions und ein bisschen Machine Learning | Projekttag<br><br>Aufgabenverteilung                |
+|                | PAUSE                                                                                     | PAUSE                                               |
+| 11.30 - 12.30  | Hands-on: Linear Regression                                                                | Arbeitsphase 1                                      |
+|                | MITTAGSPAUSE                                                                              | MITTAGSPAUSE                                        |
+| 14.00 - 15.30  | RMarkdown; Präsentation  meiner Daten                                                     | Arbeitsphase 2                                      |
+|                | PAUSE                                                                                     | PAUSE                                               |
+| 15.45 - 17.00  | Gruppenarbeit: Hands-on,  Präsentation und Diskussion                                     | Gruppenarbeit: Hands-on Präsentation und Diskussion |
+
+## RMarkdown: Überblick
+
+
+- WYISWYG vs. WYSIWM Texteditoren
+- Markdown ist eine markup Sprache, wie html oder xml
+- Die Syntax ist deutlich einfacher zu erlernen bei html und xml
+- RMarkdown erlaubt die Integration von Codeelementen ohne Copy paste von Tabellen
+
+
+## LaTex Beispiel
+
+
+![](https://www.kv.by/sites/default/files/user7743/8_6.png)
+
+
+## R Markdown{.incremental}
+
+Was glaubt ihr, wie kommt die Datenanalyse normalerweise in einen Text?
+
+
+>- R Markdown Besteht aus 3 Kernelementen:
+
+  >- YAML (Um Outputparameter zu spezifizieren)
+
+  >- markdown (Für das typesetting)
+
+  >- knitr (Um Code elemente darzustellen)
+
+
+## Let's get started...
+
+1. Öffne ein neues R Markdown Dokument
+
+2. Gib die entsprechenden Angaben an
+
+3. Speichere als .Rmd Datei
+
+
+## Aufgabe RMarkdown
+
+1. Nutzt die erstellte Datei als Vorlage.
+2. Erstellt einen Report über die Top10 Netflixfilme.
+3. Nutzt dafür folgenden Text Spezifizierunge und übernehmt  auch die Formatierung
+      Titel: Die erfolgreichsten Netflixfilme
+
+    Subüberschrift:  "Die Top 10 auf **Netflix**"
+
+    Text:" Hier werden die zehn erfolgreichsten auf der Plattform  **Netflix** seit       2015 dargestellt. Dabei wurden Filme aus allen *Sprachen* und *Genres*                berücksichtigt. Zugrunde liegt der *IMdB Score*."
+
+4. Integriert die Tabelle der 10 erfolgreichsten Filme mit den Spalten Titel, Sprache und Imdb.Score
+
+5. Generiert daraus ein word und ein pdf Dokument
+
+
+## Lineare Regression 
+
+![Kopflänge von Beutelratten as Diez et al. 2019](C:\Users\Larissa\Desktop\DataScienceR\Block2\data\Bild1.png){width=50%}
+Mittels einer Gerade sollen lineare Zusammenhänge zwischen zwei numerischen Variablen aufgezeigt werden. Dabei soll zu jedem der Punkte der kleinstmögliche Abstand zur Linie bestehen (Methode der kleinsten Quadrate)
+
+y = β0 + β1*x
+
+In R: Kopflänge ~ Körperlänge
+
+## Beispiel aus dem Text
+![](C:\Users\Larissa\Desktop\DataScienceR\Block2\data\Bild2.png){width=99%}
+
+
+ 

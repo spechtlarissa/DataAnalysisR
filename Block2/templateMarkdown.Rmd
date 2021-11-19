@@ -1,0 +1,48 @@
+---
+title: "Analyse der besten Netflix Filme 2015-2021"
+author: "Larissa Specht"
+date: "10/26/2021"
+output:
+  word_document: default
+  html_document pdf_document: default
+  pdf_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+library(pacman)
+#tinytex::install_tinytex()
+pacman::p_load(here, tidyverse, readxl, writexl)
+netflix <- read.csv(here("Block1", "data","netflix.csv"))
+
+```
+
+## Die drei best bewerteten englischen Horrorfilme und Thriller auf Netflix
+
+
+
+```{r horror, echo=FALSE}
+
+horror <- netflix %>% 
+  filter(Language == "English" & IMDB.Score > 5 & (Genre == "Horror" | Genre == "Horror thriller" | Genre == "Thriller")) %>% 
+  arrange(desc(IMDB.Score)) %>% 
+  slice(1:3) %>% 
+  select(Title, IMDB.Score)
+
+
+
+knitr::kable(horror, caption = "Top3 Horror")
+
+
+```
+
+## Plots einfügen
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+
