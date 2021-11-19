@@ -1,8 +1,5 @@
 # DataScienceR
- Course work: Introduction to Data Science with R, seminar taught at the  University of Tübingen (winter term 2021/22). The course covered four full days and covered the following topics.
-
-The folder for both blocks contain: my slides, the project tasks the students had finish by the day, and the interactive scripts for the respective
-topics that are to be understood as hands-on coding material
+ Course work: Introduction to Data Science with R, seminar taught at the  University of Tübingen (winter term 2021/22). The course covered four full days and covered the following topics:
 
 Block 1 (October 2021):
 - Intro to R and R Studio: Getting familiar with the interface and first data types and operations
@@ -20,4 +17,6 @@ Block 2 (November 2021, still work in progress):
 
 - Final day: Group data analysis project day
 
+The folder for both blocks contain: my slides, the project tasks the students had finish by the end of each day, and the interactive scripts for the respective
+topics that are to be understood as hands-on coding material
 
