@@ -1,8 +1,9 @@
-.Rproj.user
-.Rhistory
-.RData
-.Ruserdata
-.httr-oauth
+*.Rproj.user
+*.Rhistory
+*.RData
+*.Ruserdata
+*.httr-oauth
+*.gitignore
 *.pdf
 *.jpeg
 *.png
@@ -12,3 +13,4 @@
 
 /Literatur
 *pdf
+.Rproj.user
