@@ -1,5 +1,6 @@
 # Data Analysis in R
- Course work: Introduction to Data Science with R, seminar taught at the  University of Tübingen (winter term 2021/22). The course covered four full days and covered the following topics:
+ Course work: Introduction to Data Analysis in R (beginner level), workshop taught at the  University of Tübingen (winter term 2021/22). 
+ The course covered four full days and covered the following topics:
 
 Block 1 (October 2021):
 - Intro to R and R Studio: Getting familiar with the interface and first data types and operations
