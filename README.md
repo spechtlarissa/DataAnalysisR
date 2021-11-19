@@ -13,7 +13,6 @@ Block 1 (October 2021):
   linegraphs
 
 Block 2 (November 2021, still work in progress):
-
 -Overview on linear regressions
 -Presenting Data with RMarkdown
 
