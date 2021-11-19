@@ -3,19 +3,19 @@
 
 
 Block 1 (October 2021):
-- Intro to R and R Studio: Getting familiar with the interface and first data types and Operation
+- Intro to R and R Studio: Getting familiar with the interface and first data types and operations
 - Loading data frames and getting familiar with them
-- Manipulation data with dplyr
+- Data manipulation with dplyr
 - Plotting graphs with ggplot2
   histograms
   barplots
   scatterplots
   linegraphs
 
-Block 2 (November 2021, still work in progress)
+Block 2 (November 2021, still work in progress):
 
 -Overview on linear regressions
--Presenting Data with RMarkdon
+-Presenting Data with RMarkdown
 
 Final day: Group data analysis project day
 
