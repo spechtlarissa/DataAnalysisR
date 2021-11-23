@@ -17,6 +17,6 @@ Block 2 (November 2021, still work in progress):
 - Presenting data with RMarkdown
 - Final day: Group data analysis project day
 
-The folder for both blocks contain: my slides, the project tasks the students had finish by the end of each day, and the interactive scripts for the respective
+The folder for both blocks contain: my slides, the project tasks the students had to finish in the interactive group work sessions, and the scripts for the respective
 topics that are to be understood as hands-on coding material
 
