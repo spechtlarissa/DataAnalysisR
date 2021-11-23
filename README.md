@@ -14,7 +14,7 @@ Block 1 (October 2021):
 
 Block 2 (November 2021, still work in progress):
 - Overview on linear regressions
-- Presenting Data with RMarkdown
+- Presenting data with RMarkdown
 - Final day: Group data analysis project day
 
 The folder for both blocks contain: my slides, the project tasks the students had finish by the end of each day, and the interactive scripts for the respective
