@@ -6,10 +6,10 @@ Block 1 (October 2021):
 - Intro to R and R Studio: Getting familiar with the interface and first data types and operations
 - Loading data frames and getting familiar with them
 - Data manipulation with dplyr
-- Plotting graphs with ggplot2
-  histograms
-  barplots
-  scatterplots
+- Plotting graphs with ggplot2:
+  histograms,
+  barplots,
+  scatterplots,
   linegraphs
 
 Block 2 (November 2021, still work in progress):
