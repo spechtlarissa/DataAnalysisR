@@ -13,13 +13,12 @@ Block 1 (October 2021):
   linegraphs
 
 Block 2 (November 2021, still work in progress):
-- Overview on linear regressions
-- Presenting data with RMarkdown
-- Final day: Group data analysis project day
-   For advanced students: Analyzing linguistic data
-   
-          + Generating word clouds
-          + Conducting a sentiment analysis
+* Overview on linear regressions
+* Presenting data with RMarkdown
+* Final day: Group data analysis project day
+   + For advanced students: Analyzing linguistic data
+   - Generating word clouds
+   - Conducting a sentiment analysis
 
 The folder for both blocks contain: my slides, the project tasks the students had to finish in the interactive group work sessions, and the scripts for the respective
 topics that are to be understood as hands-on coding material
