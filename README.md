@@ -12,7 +12,7 @@ Block 1 (October 2021):
   scatterplots,
   linegraphs
 
-Block 2 (November 2021, still work in progress):
+Block 2 (November 2021):
 * Overview on linear regressions
 * Presenting data with RMarkdown
 * Final day: Group data analysis project day
